@@ -51,7 +51,7 @@ As stated previously, two separate models were developed for different predictio
 
 In the table below the mean relative error and the max relative error across all testing samples are depicted, showing excellent generalization ability of the model to unseen data.
 
-|  | U | V 
+| Single-Timestep Prediction | U | V 
 | :--- | :--- | :--- |
 | **Mean Relative Error (%)** | 0.34 | 0.38 
 | **Max Relative Error (%)** | 1.14 | 1.05 
