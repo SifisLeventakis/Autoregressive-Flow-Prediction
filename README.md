@@ -11,7 +11,7 @@ The flow around a circular cylinder is a canonical benchmark problem in computat
 <div align="justify">
 The U-Net is a convolutional neural network architecture originally developed for biomedical image segmentation, but it has proven exceptionally effective for fluid dynamics due to its ability to capture both local details and global context. It is based on the encoder-decoder structure: 
 The encoder progressively downsamples the input, increasing the receptive field while reducing spatial resolution. Early encoder layers capture fine local features such as cylinder boundaries and small-scale velocity gradients, while deeper layers encode more abstract, global representations of the flow. The bottleneck, located at the middle of the “U”, contains the most compressed representation of the input, summarizing the overall flow structure such as wake formation and large-scale patterns. The decoder then progressively upsamples this representation to reconstruct the output field.
-* Skip connections: The skip connections concatenate encoder and decoder feature maps at the same resolution level. Without skip connections the decoder only has the bottleneck to work from - spatial detail about the cylinder boundary, boundary layer, etc. is lost. With skip connections that detail is preserved and passed directly.
+The skip connections concatenate encoder and decoder feature maps at the same resolution level. Without skip connections the decoder only has the bottleneck to work from - spatial detail about the cylinder boundary, boundary layer, etc. is lost. With skip connections that detail is preserved and passed directly.
 
 <img width="700" height="300" alt="image" src="https://github.com/user-attachments/assets/b578de99-5312-4f0d-8021-9e450250d988" />
 
